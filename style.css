@@ -1,12 +1,35 @@
-*{
-
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+:root {
+    --primary-color: #F5CF06;
+    --second-color: #8E4106; 
 
 }
-a{
-    text-decoration: none;
-    color: inherit;
 
+body {
+    height: 100vh;
+    background-color: var(--primary-color);
+    display: flex;
+    padding: 70px;
+    flex-direction: column;
+    font-family: Righteous;
+}
+header {
+
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+}
+
+header span {
+    font-size: 32;
+    color: var(--second-color)
+}
+
+main {
+    background-color: #ffc4e5;
+    flex-grow: 1;
+}
+
+footer {
+    background-color: rgb(191, 225, 255);
 }

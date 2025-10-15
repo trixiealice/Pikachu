@@ -11,14 +11,14 @@ body {
     flex-direction: column
 }
 header {
-    background-color: #8E4106;
+
 }
 
 main {
-    background-color: #f506e1;
+    background-color: #ffc4e5;
     flex-grow: 1;
 }
 
 footer {
-    background-color: aliceblue;
+    background-color: rgb(191, 225, 255);
 }
