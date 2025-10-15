@@ -1,9 +1,3 @@
-:root {
-    --primary-color: #F5CF06;
-    --second-color: #8E4106; 
-
-}
-
 body {
     height: 100vh;
     background-color:aqua;
@@ -15,10 +9,9 @@ header {
 }
 
 main {
-    background-color: #ffc4e5;
     flex-grow: 1;
 }
 
 footer {
-    background-color: rgb(191, 225, 255);
+    
 }
