@@ -7,10 +7,10 @@
 body {
     height: 100vh;
     background-color: var(--primary-color);
-    display: flex;
     flex-direction: column;
+    display: flex;
     padding: 70px;
-    font-family: Righteous;
+    font-family: Righteous, sans-serif;
 }
 header {
 
@@ -26,24 +26,15 @@ header span {
 }
 
 main {
-    flex-grow: 1;
     display: flex;
-    flex-direction: column;
-}
+    flex-direction: column; 
+    flex-grow: 1;
 
-.sombra {
-    position: absolute;
-    font-size: 19vh;
-    color: #ffffff55;
-    z-index: -999;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -90%);
 }
 
 h1{
     flex-grow: 1;
-    font-size: 25vw;
+    font-size: 20vh;
     color: white;
     display: flex;
     justify-content: center;
@@ -83,6 +74,16 @@ h1{
 
 }
 
+.sombra {
+    position: absolute;
+    font-size: 28vw;
+    color: #ffffff55;
+    z-index: -999;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -90%);
+}
+
 .pikachu {
     position: absolute;
     top: 50%;
@@ -117,6 +118,9 @@ footer {
     .descricao p {
         text-align: center;
     }
+    .descricao {
+        z-index: 1;
+    }
     .pikachu {
         transform: translate(-45%, -50%);
     }
@@ -127,6 +131,24 @@ footer {
 }
 
 /*MOBILE*/
-@media (max-width: 400px) {
+@media (max-width: 480px) {
+    .descricao p {
+        display: none;
+    }
+.sombra {
+    transform: translate(-50%, -220%);
+}
+h1 {
+    transform: translate(0, -22%);
+}
+.descricao h2 {
+    font-size: 38px;
+}
+.conteiner a{
+    width: 100%;
+}
+.pikachu {
+    height: 50vh;
+}
 
 }
