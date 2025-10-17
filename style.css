@@ -21,7 +21,7 @@ header {
 }
 
 header span {
-    font-size: 32;
+    font-size: 32px;
     color: var(--second-color)
 }
 
@@ -33,7 +33,7 @@ main {
 
 .sombra {
     position: absolute;
-    font-size: 400px;
+    font-size: 19vh;
     color: #ffffff55;
     z-index: -999;
     top: 50%;
@@ -43,7 +43,7 @@ main {
 
 h1{
     flex-grow: 1;
-    font-size: 300px;
+    font-size: 25vw;
     color: white;
     display: flex;
     justify-content: center;
@@ -93,4 +93,40 @@ h1{
 footer {
     text-align: center;
     color: var(--second-color);
+}
+
+
+/*TABLET */
+@media (max-width: 1024px){
+    body {
+        padding: 30px;
+    }
+    .sombra {
+        transform: translate(-50%, -180%);
+    }
+    h1{
+        transform: translate(0, -30%);
+    }
+    .conteiner{
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+        padding: 0;
+        gap: 8px;
+    }
+    .descricao p {
+        text-align: center;
+    }
+    .pikachu {
+        transform: translate(-45%, -50%);
+    }
+    footer {
+        display: none;
+    }
+
+}
+
+/*MOBILE*/
+@media (max-width: 400px) {
+
 }
